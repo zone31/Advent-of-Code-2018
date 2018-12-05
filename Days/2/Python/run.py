@@ -38,9 +38,11 @@ def solver_2star(d):
                 a,b = data
                 if a != b:
                     if pos >= 0:
+                        pos = -1
                         break
                     pos = count
-            return x[:pos] + x[pos+1:]
+            if pos >= 0:
+                return x[:pos] + x[pos+1:]
         str_list.append(x)
 ##############################MAIN#################################
 def main():
