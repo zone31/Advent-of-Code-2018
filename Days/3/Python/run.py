@@ -10,7 +10,6 @@ def data_parser(filepath):
     """
     data = []
     for line in (a.rstrip() for a in open(filepath)):
-        print
         comp = line.split(" ")
         cloth_id = int(comp[0][1:])
         pos = tuple(map(int,comp[2][:-1].split(",")))
