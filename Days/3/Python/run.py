@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-from collections import Counter
 #######################Helping functions###########################
 def data_parser(filepath):
     """
